@@ -1,0 +1,108 @@
+package Hotel.Management.System;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.ResultSet;
+
+public class Login extends JFrame implements ActionListener {
+
+    JTextField textField1;
+    JPasswordField passwordField1;
+    JButton b1,b2;
+
+    Login() {
+        //!Adding Labels
+        //?Adding Label for Username
+        JLabel label1 = new JLabel("Username: ");
+        label1.setBounds(40,47,100,30);
+        label1.setFont(FontLoader.getLabelFont(16));
+        label1.setForeground(Color.WHITE);
+        add(label1);
+        //?Adding Label for Password
+        JLabel label2 = new JLabel("Password: ");
+        label2.setBounds(40,117,100,30);
+        label2.setFont(FontLoader.getLabelFont(16));
+        label2.setForeground(Color.WHITE);
+        add(label2);
+
+        //!Adding TextFields
+        //?Adding TextField for Username
+        textField1 = new JTextField();
+        textField1.setBounds(150,50,150,30);
+        textField1.setForeground(Color.WHITE);
+        textField1.setFont(FontLoader.getTextFont(15));
+        textField1.setBackground(new Color(62, 66, 66));
+        add(textField1);
+
+        //?Adding text Field for Password
+        passwordField1 = new JPasswordField();
+        passwordField1.setBounds(150,120,150,30);
+        passwordField1.setForeground(Color.WHITE);
+        passwordField1.setFont(FontLoader.getTextFont(15));
+        passwordField1.setBackground(new Color(62, 66,66));
+        add(passwordField1);
+
+        //!Adding Logo
+        ImageIcon labelImage = new ImageIcon(ClassLoader.getSystemResource("icon/login1.gif"));
+        Image scaledImage = labelImage.getImage().getScaledInstance(300, 300, Image.SCALE_DEFAULT);
+        ImageIcon finalImage = new ImageIcon(scaledImage);
+        JLabel label = new JLabel(finalImage);
+        label.setBounds(320,-30,280,300);
+        add(label);
+
+        //!Adding Buttons
+        //?Login Button
+        b1 = new JButton("Login");
+        b1.setBounds(40,190,120,30);
+        b1.setFont(FontLoader.getButtonFont(17));
+        b1.setBackground(Color.WHITE);
+        b1.addActionListener(this);
+        add(b1);
+        //?Cancel Button
+        b2 = new JButton("CANCEL");
+        b2.setBounds(180,190,120,30);
+        b2.setFont(FontLoader.getButtonFont(17));
+        b2.setBackground(Color.WHITE);
+        b2.addActionListener(this);
+        add(b2);
+
+        //! Main Frame
+        setTitle("Hotel Management System - Login Page");
+        getContentPane().setBackground(Color.BLACK);
+        setLayout(null);
+        setLocation(400,270);
+        setSize(600,300);
+        setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == b1) {
+            try {
+                DBCon c = new DBCon();
+                String username = textField1.getText();
+                String password = passwordField1.getText();
+
+                String q="SELECT * FROM login WHERE BINARY username='"+username+"' AND BINARY password ='"+password+"'";
+                ResultSet resultSet = c.statement.executeQuery(q);
+                if(resultSet.next()) {
+                    new Dashboard();
+                    setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "INVALID INFORMATION BRO!!");
+                }
+            }catch(Exception E) {
+                E.printStackTrace();
+            }
+        } else {
+            System.exit(9999);
+        }
+    }
+
+    public static void main(String[] args) {
+        FontLoader.Fonts();
+        new Login();
+    }
+}
