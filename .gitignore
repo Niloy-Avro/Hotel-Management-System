@@ -1,0 +1,23 @@
+# Ignore build and output directories
+bin/
+out/
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+
+# VSCode project files
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Compiled class files
+*.class
+
+# Temporary files
+*.tmp
