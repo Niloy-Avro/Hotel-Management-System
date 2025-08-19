@@ -12,7 +12,7 @@ public class Splash extends JFrame {
         label.setBounds(0, 0, 845, 600);
         add(label);
 
-        setTitle("Hotel Management System");
+        setUndecorated(true);
         getContentPane().setBackground(Color.BLACK);
         setLayout(null);
         setLocation(300, 80);
@@ -30,7 +30,8 @@ public class Splash extends JFrame {
     }
 
     public static void main(String[] args) {
-        new Login();
+        FontLoader.Fonts();
+        new Splash();
     }
 
 }

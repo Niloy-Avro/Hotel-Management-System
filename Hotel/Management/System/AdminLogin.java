@@ -75,6 +75,10 @@ public class AdminLogin extends JFrame implements ActionListener {
         setLocation(400,270);
         setSize(600,300);
         setVisible(true);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        // Set window title bar icon
+        ImageIcon icon = new ImageIcon(ClassLoader.getSystemResource("icon/logo.png"));
+        setIconImage(icon.getImage());
     }
 
     @Override
@@ -83,9 +87,10 @@ public class AdminLogin extends JFrame implements ActionListener {
             try {
                 DBCon c = new DBCon();
                 String username = textField1.getText();
-                String password = passwordField1.getText();
+                char[] password = passwordField1.getPassword();
+                String password1 = new String(password);
 
-                String q="SELECT * FROM adminLogin WHERE BINARY username='"+username+"' AND BINARY password ='"+password+"'";
+                String q="SELECT * FROM adminLogin WHERE BINARY username='"+username+"' AND BINARY password ='"+password1+"'";
                 ResultSet resultSet = c.statement.executeQuery(q);
                 if(resultSet.next()) {
                     new Admin();

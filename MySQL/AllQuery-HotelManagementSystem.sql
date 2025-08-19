@@ -68,7 +68,11 @@ CREATE TABLE adminLogin (
 );
 SELECT * FROM adminLogin;
 INSERT INTO adminLogin VALUES('Niloy Avro','123456789');
+INSERT INTO adminLogin VALUES('Priyanka','12345678');
 
+-- To store the password after Hashing for Security Reasons
+-- ALTER TABLE adminLogin ADD COLUMN password_hash VARCHAR(64);
+-- UPDATE adminLogin SET password_hash = SHA2(password, 256);
 
 -- creating department table
 CREATE TABLE department (

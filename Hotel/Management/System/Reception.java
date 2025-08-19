@@ -160,7 +160,8 @@ public class Reception extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-
+                    setVisible(false);
+                    new CheckOut();
                 } catch(Exception E) {
                     E.printStackTrace();
                 }
@@ -198,7 +199,8 @@ public class Reception extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-
+                    new UpdateRoom();
+                    setVisible(false);
                 } catch(Exception E) {
                     E.printStackTrace();
                 }
@@ -271,6 +273,10 @@ public class Reception extends JFrame{
         getContentPane().setBackground(Color.WHITE);
         setSize(1950,1090);
         setVisible(true);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        // Set window title bar icon
+        ImageIcon icon = new ImageIcon(ClassLoader.getSystemResource("icon/logo.png"));
+        setIconImage(icon.getImage());
     }
 
     public static void main(String[] args) {

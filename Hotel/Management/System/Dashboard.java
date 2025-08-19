@@ -57,6 +57,10 @@ public class Dashboard extends JFrame implements ActionListener {
         setLayout(null);
         setSize(1950, 1090);
         setVisible(true);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        // Set window title bar icon
+        ImageIcon icon = new ImageIcon(ClassLoader.getSystemResource("icon/logo.png"));
+        setIconImage(icon.getImage());
     }
 
     @Override
