@@ -30,7 +30,8 @@ public class Splash extends JFrame {
     }
 
     public static void main(String[] args) {
-        new Login();
+        FontLoader.Fonts();
+        new Splash();
     }
 
 }
