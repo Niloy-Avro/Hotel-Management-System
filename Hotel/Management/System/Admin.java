@@ -107,7 +107,7 @@ public class Admin extends JFrame implements ActionListener {
             new AddDriver();
             setVisible(false);
         } else if (e.getSource()==logout) {
-            System.out.println("Nikal gaya Bhai");
+            System.out.println("Successfully Logged-Out");
             System.exit(99999);
         } else if (e.getSource()==back) {
             new Dashboard();

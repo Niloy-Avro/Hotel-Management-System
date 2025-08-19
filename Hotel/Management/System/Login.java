@@ -83,9 +83,10 @@ public class Login extends JFrame implements ActionListener {
             try {
                 DBCon c = new DBCon();
                 String username = textField1.getText();
-                String password = passwordField1.getText();
+                char[] password = passwordField1.getPassword();
+                String password1 = new String(password);
 
-                String q="SELECT * FROM login WHERE BINARY username='"+username+"' AND BINARY password ='"+password+"'";
+                String q="SELECT * FROM login WHERE BINARY username='"+username+"' AND BINARY password ='"+password1+"'";
                 ResultSet resultSet = c.statement.executeQuery(q);
                 if(resultSet.next()) {
                     new Dashboard();

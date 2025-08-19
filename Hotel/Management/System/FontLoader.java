@@ -34,11 +34,9 @@ public class FontLoader {
     public static Font getHeadingFont(float size) {
         return headingFont.deriveFont(size);
     }
-
     public static Font getLabelFont(float size) {
         return labelFont.deriveFont(size);
     }
-
     public static Font getButtonFont(float size) {
         return buttonFont.deriveFont(size);
     }
@@ -46,4 +44,7 @@ public class FontLoader {
         return textFont.deriveFont(size);
     }
 
+    static void main(String[] args) {
+        System.out.println("All Fonts are Ready to use");
+    }
 }
