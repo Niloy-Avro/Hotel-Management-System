@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/github/last-commit/Niloy-Avro/Hotel-Management-System?style=for-the-badge&color=brightgreen&label=Last%20Commit" />
   <img src="https://img.shields.io/badge/Database-MySQL-4479A1?color=1752bf&style=for-the-badge" />
   <img src="https://img.shields.io/badge/GUI-Java%20Swing-FF6F00?color=red&style=for-the-badge" />
-  <img src="https://img.shields.io/github/repo-size/Niloy-Avro/Hotel-Management-System?color=purple&style=for-the-badge"/>
+  <br><img src="https://img.shields.io/github/repo-size/Niloy-Avro/Hotel-Management-System?color=purple&style=for-the-badge"/>
   <img src="https://img.shields.io/github/languages/code-size/Niloy-Avro/Hotel-Management-System?style=for-the-badge" alt="Code Size">
 </p>
 
