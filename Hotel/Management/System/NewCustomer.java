@@ -187,6 +187,9 @@ public class NewCustomer extends JFrame implements ActionListener {
         setSize(885,500);
         setLocation(110,200);
         setVisible(true);
+        // Set window title bar icon
+        ImageIcon icon = new ImageIcon(ClassLoader.getSystemResource("icon/logo.png"));
+        setIconImage(icon.getImage());
     }
 
     @Override

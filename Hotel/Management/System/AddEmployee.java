@@ -177,6 +177,9 @@ public class AddEmployee extends JFrame implements ActionListener {
         setLayout(null);
         setSize(885,500);
         setVisible(true);
+        // Set window title bar icon
+        ImageIcon icon = new ImageIcon(ClassLoader.getSystemResource("icon/logo.png"));
+        setIconImage(icon.getImage());
     }
 
     @Override

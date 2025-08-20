@@ -145,6 +145,9 @@ public class SearchRoom extends JFrame {
         setSize(800,600);
         setLocation(500,100);
         setVisible(true);
+        // Set window title bar icon
+        ImageIcon icon = new ImageIcon(ClassLoader.getSystemResource("icon/logo.png"));
+        setIconImage(icon.getImage());
     }
 
     public static void main(String[] args) {

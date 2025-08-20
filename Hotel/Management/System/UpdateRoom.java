@@ -212,6 +212,9 @@ public class UpdateRoom extends JFrame {
         setLayout(null);
         setSize(885,500);
         setVisible(true);
+        // Set window title bar icon
+        ImageIcon icon = new ImageIcon(ClassLoader.getSystemResource("icon/logo.png"));
+        setIconImage(icon.getImage());
     }
 
     public static void main(String[] args) {
