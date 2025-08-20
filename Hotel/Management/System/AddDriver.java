@@ -107,21 +107,21 @@ public class AddDriver extends JFrame implements ActionListener {
 
         //! Add Button
         //?Add Button
-        JButton b1 = new JButton("ADD");
+        b1 = new JButton("ADD");
         b1.setBounds(64,375,150,25);
         b1.setBackground(Color.WHITE);
         b1.setFont(FontLoader.getButtonFont(17));
         b1.addActionListener(this);
         panel.add(b1);
         //?Delete Button
-        JButton b2 = new JButton("DELETE");
+        b2 = new JButton("DELETE");
         b2.setBounds(155,430,150,25);
         b2.setBackground(Color.WHITE);
         b2.setFont(FontLoader.getButtonFont(17));
         b2.addActionListener(this);
         panel.add(b2);
         //?Back Button
-        JButton b3 = new JButton("BACK");
+        b3 = new JButton("BACK");
         b3.setBounds(250,375,150,25);
         b3.setBackground(Color.WHITE);
         b3.setFont(FontLoader.getButtonFont(17));
