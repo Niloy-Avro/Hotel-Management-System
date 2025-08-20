@@ -35,19 +35,19 @@
 
 ## 🚀 Getting Started
 
-> ### 1. Clone the Repository
+> ### **1. Clone the Repository**
 > ```bash
 > git clone https://github.com/Niloy-Avro/Hotel-Management-System.git
 > cd Hotel-Management-System
 >```
 
->### 2. Open in IntelliJ / VS Code
+>### **2. Open in IntelliJ / VS Code**
 > ```bash
 > • Mark the src folder as Source Root.
 > • Make sure JDK 17 (or higher) is selected as Project SDK
 > ```
 
->### 3. Run the Project
+>### **3. Run the Project**
 >```bash
 > • Run from Splash.java (contains the main() method)  
 > • Splash screen will appear → after 2 seconds → Login page opens
