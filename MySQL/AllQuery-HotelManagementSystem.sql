@@ -13,7 +13,7 @@ CREATE TABLE login (
     password VARCHAR(25)
 )
 SELECT * FROM login;
-SET SQL_SAFE_UPDATES = 0; -- kono data dlt korte gele mysql er by default safe_updates value tak 1 theke 0 kore nite hoy
+SET SQL_SAFE_UPDATES = 0; 
 INSERT INTO login VALUES('Niloy','123456');
 INSERT INTO login VALUES('Niloy Avro','123456789');
 DELETE FROM login WHERE username = 'Niloy Avro' AND password = '123456789';
@@ -68,7 +68,6 @@ CREATE TABLE adminLogin (
 );
 SELECT * FROM adminLogin;
 INSERT INTO adminLogin VALUES('Niloy Avro','123456789');
-INSERT INTO adminLogin VALUES('Priyanka','12345678');
 
 -- To store the password after Hashing for Security Reasons
 -- ALTER TABLE adminLogin ADD COLUMN password_hash VARCHAR(64);
@@ -101,9 +100,9 @@ CREATE TABLE customer (
     deposit INTEGER,
     checkintime VARCHAR(80)
 );
-ALTER TABLE customer CHANGE number IDnumber INT; -- numnber er nam change kore IDnumber korlam
-ALTER TABLE customer ADD UNIQUE (IDnumber); -- IDnumber sobar unique hobe
-ALTER TABLE customer MODIFY IDnumber VARCHAR(50); -- IDnumber VARCHAR korlam
+ALTER TABLE customer CHANGE number IDnumber INT; 
+ALTER TABLE customer ADD UNIQUE (IDnumber); 
+ALTER TABLE customer MODIFY IDnumber VARCHAR(50); 
 SELECT * FROM customer;
 
 
