@@ -10,10 +10,15 @@ public class DBCon {
 
     public DBCon(){
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotelEE","root","niloy");
+            connection = DriverManager.getConnection(
+                    "jdbc:mysql://switchback.proxy.rlwy.net:16925/hotelEE",
+                    "root",
+                    "TwUJAkmLvEmgnrGAQSZVXAEHMlCFFfDB"
+            );
             statement = connection.createStatement();
+            System.out.println("✅Database Connected Successfully!");
         }catch(Exception e) {
-            e.getStackTrace();
+            e.printStackTrace();
         }
     }
 }
