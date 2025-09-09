@@ -1,3 +1,5 @@
+---
+
 <h1 align="center">🏨 Hotel Management System</h1>
 
 <p align="center">
@@ -11,6 +13,15 @@
 
 ---
 
+<h2 align="center">📦 Download</h2>
+
+<p align="center">
+  <a href="https://github.com/Niloy-Avro/Hotel-Management-System/releases/download/v1.0/HMSystem-setup.exe">
+    <img src="https://img.shields.io/badge/⬇️%20Download%20Setup%20File-228B22?style=for-the-badge&logo=windows&logoColor=white" height="150"/>
+  </a>
+</p>
+
+---
 <p align="center">
   <b>A sleek and intuitive <b>Java Swing</b> application to manage hotel operations </b><br>— rooms, customers, bookings, and staff.
 </p>
@@ -57,16 +68,6 @@
 
 ---
 
-## 📦 Download
-
-<p align="center">
-  <a href="https://github.com/Niloy-Avro/Hotel-Management-System/releases/download/v1.0/HMSystem-setup.exe">
-    <img src="https://img.shields.io/badge/Download-Setup%20File-blue?style=for-the-badge" />
-  </a>
-</p>
-
----
-
 ## 🛠️ Tech Stack
 - Java 17
 - Java Swing (GUI)
@@ -74,10 +75,8 @@
 - IntelliJ IDEA / VS Code (recommended IDEs)
 
 ---
+
 ## 👨‍💻 Author
 
 - Niloy Avro Mondal  
 - GitHub: [@Niloy-Avro](https://github.com/Niloy-Avro)
-
----
-
