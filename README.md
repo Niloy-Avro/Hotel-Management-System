@@ -59,9 +59,9 @@
 
 ## 📦 Download
 
-<p align="left">
-  <a href="https://github.com/Niloy-Avro/Hotel-Management-System/releases/latest">
-    <img src="https://img.shields.io/badge/⬇️%20Download-Latest%20Release-blue?style=for-the-badge" />
+<p align="center">
+  <a href="https://github.com/Niloy-Avro/Hotel-Management-System/releases/download/v1.0/HMSystem-setup.exe">
+    <img src="https://img.shields.io/badge/Download-Setup%20File-blue?style=for-the-badge" />
   </a>
 </p>
 
