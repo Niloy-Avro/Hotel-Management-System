@@ -57,6 +57,16 @@
 
 ---
 
+## 📦 Download
+
+<p align="left">
+  <a href="https://github.com/Niloy-Avro/Hotel-Management-System/releases/latest">
+    <img src="https://img.shields.io/badge/⬇️%20Download-Latest%20Release-blue?style=for-the-badge" />
+  </a>
+</p>
+
+---
+
 ## 🛠️ Tech Stack
 - Java 17
 - Java Swing (GUI)
